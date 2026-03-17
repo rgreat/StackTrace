@@ -36,10 +36,9 @@ begin
   ReadLn;
 end.```
 Result:
-```
 Start
 Exception: Test Error
 StackTrace:
 [00AF2F29] Test.ErrorTest (Line 13, "Test.dpr")
 [00AFA00B] Test.Test (Line 19, "Test.dpr")
-```
+

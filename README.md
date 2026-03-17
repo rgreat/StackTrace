@@ -1,9 +1,9 @@
 # StackTrace
-Crossplatform Stack Trace for Delphi
+**Crossplatform Stack Trace for Delphi**
 
-For Windows uses JCLDebug.
+For **Windows** uses **JCLDebug**.
 
-For Linux uses ported Free Pascal stacktrace.
+For **Linux** uses ported **Free Pascal** stacktrace.
 
 Usage: 
 ```pascal

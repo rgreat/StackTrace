@@ -13,7 +13,6 @@ program Test;
 
 {$R *.res}
 
-
 uses StackTrace, Classes, SysUtils;
 
 begin

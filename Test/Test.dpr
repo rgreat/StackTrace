@@ -7,11 +7,16 @@ program Test;
 
 uses StackTrace, Classes, SysUtils;
 
+procedure ErrorTest;
+begin
+  raise Exception.Create('Test Error');
+end;
+
 begin
   try
     WriteLn('Start');
 
-    raise Exception.Create('Test Error');
+    ErrorTest;
   except
     on E: Exception do begin
       WriteLn('Exception: '+E.Message);

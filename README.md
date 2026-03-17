@@ -13,13 +13,19 @@ program Test;
 
 {$R *.res}
 
+
 uses StackTrace, Classes, SysUtils;
+
+procedure ErrorTest;
+begin
+  raise Exception.Create('Test Error');
+end;
 
 begin
   try
     WriteLn('Start');
 
-    raise Exception.Create('Test Error');
+    ErrorTest;
   except
     on E: Exception do begin
       WriteLn('Exception: '+E.Message);
@@ -28,12 +34,12 @@ begin
   end;
 
   ReadLn;
-end.
-```
+end.```
 Result:
 ```
 Start
 Exception: Test Error
 StackTrace:
-[00A08049] Test.Test (Line 14, "Test.dpr")
+[00AF2F29] Test.ErrorTest (Line 13, "Test.dpr")
+[00AFA00B] Test.Test (Line 19, "Test.dpr")
 ```

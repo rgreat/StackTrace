@@ -83,3 +83,4 @@ modules/
 /Test/Test._@emb_.tmp
 /Test/*.mes
 /Test/*.dproj
+/Test/Test.res

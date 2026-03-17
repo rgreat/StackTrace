@@ -5,7 +5,7 @@ For Windows uses JCLDebug.
 For Linux uses ported Free Pascal stacktrace.
 
 Usage: 
-
+```pascal
 program Test;
 
 {$APPTYPE CONSOLE}
@@ -29,10 +29,11 @@ begin
 
   ReadLn;
 end.
-
+```
 Result:
-
+```
 Start
 Exception: Test Error
 StackTrace:
 [00A08049] Test.Test (Line 14, "Test.dpr")
+```

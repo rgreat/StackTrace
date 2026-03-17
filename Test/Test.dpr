@@ -4,7 +4,6 @@ program Test;
 
 {$R *.res}
 
-
 uses StackTrace, Classes, SysUtils;
 
 procedure ErrorTest;
